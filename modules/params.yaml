@@ -1,0 +1,39 @@
+# general
+DATE_TIME_FORMAT: "%Y-%m-%d %H:%M:%S"
+OBJ_STORE: "object_store/"
+HOLIDAY_LIST_STORE: "datasets/holiday_lists/"
+
+# instrument
+DIVIDEND: 0.0078 # Bank Nifty Dividend 0.78%
+UNDERLYING: "BANKNIFTY" # Underlying Instrument
+CASH_ID: 0
+RISK_FREE_RATE: 0.02
+
+# blotter
+LAST_SEQ: 1
+DISABLE_BLOTTER_UPDATE: False
+BLOTTER_STORE: "object_store/blotter/"
+
+
+# strategy
+TRADING_END_TIME: "15:30:00"
+STRIKE_TOLERANCE: 0.02 # this is the tolerance (2%) for strike prices around ATM and OTM Calcs
+UNIT_SIZE: 1 # this is the size of each contract in the strategy
+UNWIND_TIME: 45 # how many time units before we should initiate unwind
+DELTA_HEDGE: True
+SIMPLE_UNWIND: True
+STRATEGY_TRADE_SIDE: "market_maker"
+HEDGE_TRADE_SIDE: "customer"
+UNWIND_TRADE_SIDE: "customer"
+
+
+# trade
+TXN_COST: 5
+TXN_COST_FLAG: True
+
+# backtest
+BCKTST_STORE: "object_store/backtest/"
+
+# log
+DISABLE_LOG: False
+DEBUG: True # 0 : OFF and 1 : ON
